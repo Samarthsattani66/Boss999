@@ -20,20 +20,19 @@
 </head>
 <body>
 <script>
- if (confirm("Join For More Links!!")) {
-    window.location.href = "https://t.me/+avV8vpMfkOJmZDhl";}
+    // Override window.open to suppress pop-ups
+    window.open = function() {
+        console.log("Pop-up attempt blocked");
+        return null; // Prevent the new window from opening
+    };
+
+    // Prompt the user and redirect if they confirm
+    if (confirm("Join For More Links!!")) {
+        window.location.href = "https://t.me/+avV8vpMfkOJmZDhl";
+    }
 </script>
 
 <iframe src="https://cxh.pages.dev/tnt1/" allowfullscreen></iframe>
-    // Override window.open to suppress pop-ups
-window.open = function() {
-    console.log("Pop-up attempt blocked");
-    return null; // Prevent the new window from opening
-};
 
 </body>
 </html>
-'));
-//-->
-</script>
-
